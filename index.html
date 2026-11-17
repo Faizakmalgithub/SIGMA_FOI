@@ -45,6 +45,18 @@ footer{padding:28px max(7vw,24px);background:#030916;border-top:1px solid #1e355
 .ai-class-grid span{border:1px solid #284365;background:#12233e;border-radius:5px;padding:5px 7px;font-size:.75rem;color:#c2d6f0}
 .ai-class-grid span:last-child{border-color:#b68d3f}
 @media(max-width:700px){.ai-top{padding:14px 13px 4px}.ai-controls{padding:10px 12px}.ai-controls button{padding:9px 11px}.ai-detail{grid-template-columns:1fr;padding:13px}.ai-class-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.ai-note{padding:0 13px 15px}}
+
+/* ResNet cyber explorer */
+.cx-shell{margin-top:26px;background:linear-gradient(130deg,#071329,#0a1c39 50%,#061226);border:1px solid #2b5478;border-radius:16px;box-shadow:0 16px 58px #0005;overflow:hidden}
+.cx-head{padding:19px 23px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-bottom:1px solid #244465;color:#dcfaff;font-size:.84rem;font-weight:850;letter-spacing:1.3px}.cx-head-muted{color:#7eb5cd;font-weight:500}.cx-live-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#50f5b2;box-shadow:0 0 12px #50f5b2;margin-right:9px}.cx-demo-pill{font-size:.66rem;letter-spacing:1px;color:#efc56d;border:1px solid #826831;border-radius:100px;padding:5px 11px}
+.cx-section-label{padding:18px 22px 10px;font-size:.73rem;letter-spacing:1.6px;font-weight:800;color:#55c9e7}.cx-section-sub{font-size:.72rem;letter-spacing:0;color:#8fa6bd;font-weight:500;margin-left:12px}
+.cx-class-buttons{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;padding:3px 22px 17px}.cx-class-buttons button{background:#101f39;color:#abcbe1;border:1px solid #2e4b6a;min-width:0;padding:10px 6px;border-radius:8px;font-size:.78rem;cursor:pointer;font-weight:750;transition:.2s}.cx-class-buttons button:hover{border-color:#5bddec;color:#fff;transform:translateY(-1px)}.cx-class-buttons button.active{color:#081c29;background:#4ae5ee;border-color:#4ae5ee;box-shadow:0 0 18px #44d8ed55}
+.cx-toolbar{padding:13px 22px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;background:#0d2240;border-top:1px solid #1e3b58;border-bottom:1px solid #1e3b58}.cx-toolbar-left{display:flex;flex-wrap:wrap;gap:7px}.cx-toolbar button{border-radius:7px;border:1px solid #315a77;background:#143455;color:#ddf3ff;padding:8px 13px;font-weight:750;cursor:pointer;font-size:.76rem}.cx-toolbar button:hover{background:#205a7b}.cx-toolbar button:disabled{opacity:.4;cursor:not-allowed}.cx-status{font-size:.77rem;color:#76ecca;font-weight:700}
+.cx-scroll{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-color:#377b91 #0b1a30;scrollbar-width:thin;margin:0 13px;border:1px solid #28435b;border-radius:10px;background:radial-gradient(ellipse at 40% 40%,#0d2443 0%,#081526 73%)}#cxDiagram{display:block;width:2550px;height:440px;max-width:none}.cx-legend{display:flex;gap:18px;flex-wrap:wrap;padding:12px 22px;border-bottom:1px solid #1b3f5c;color:#abc3d6;font-size:.7rem}.cx-legend span{display:flex;align-items:center;gap:7px}.cx-legend i{display:inline-block;width:9px;height:9px;border-radius:50%}
+.cx-results{display:grid;grid-template-columns:1.5fr 1fr;gap:15px;padding:4px 22px 24px}.cx-output-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.cx-output-item{display:flex;align-items:center;gap:8px;background:#0f2540;border:1px solid #294963;border-radius:8px;padding:9px;font-size:.76rem;color:#91afc8;min-width:0}.cx-output-item .cx-orb{width:12px;height:12px;flex:none;border-radius:50%;background:#38566c;box-shadow:0 0 0 3px #29415b}.cx-output-item.lit{border-color:#4bf4b1;background:#103d3b;color:#dffff4;font-weight:850;box-shadow:inset 0 0 18px #3de9b315}.cx-output-item.lit .cx-orb{background:#77ffba;box-shadow:0 0 18px #52ffc6,0 0 0 4px #1f795d}.cx-decision{background:#10283f;border:1px solid #31516a;border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;justify-content:center}.cx-decision-kicker{color:#84a7bc;letter-spacing:1.3px;font-size:.65rem;font-weight:850}.cx-winner{font-size:2.1rem;line-height:1.3;color:#6dffc0;font-weight:900;margin:6px 0}.cx-decision-note{font-size:.74rem;color:#b2c8d8}.cx-progress{margin-top:17px;height:5px;border-radius:9px;background:#26445b;overflow:hidden}.cx-progress div{height:100%;width:0;background:linear-gradient(90deg,#31d1eb,#53efac);transition:width .1s linear}.cx-disclaimer{margin:0;padding:0 22px 24px;color:#8faec3;font-size:.77rem;line-height:1.75}.cx-disclaimer strong{color:#d9f3ff}
+.cx-block rect.cx-block-bg{fill:#10263d;stroke:#39718b;stroke-width:1.5}.cx-block.active rect.cx-block-bg{fill:#143c4b;stroke:#5df2bd;stroke-width:3;filter:drop-shadow(0 0 8px #37efb055)}.cx-block.done rect.cx-block-bg{fill:#103a43;stroke:#48abac}.cx-block text{font-family:Arial,sans-serif;pointer-events:none}.cx-path{fill:none;stroke:#30c7e6;stroke-width:3;opacity:.58}.cx-skip{fill:none;stroke:#ecb451;stroke-width:2.6;opacity:.8;stroke-dasharray:6 4}.cx-pulse{filter:drop-shadow(0 0 7px currentColor)}
+@media(max-width:760px){.cx-head{padding:14px}.cx-class-buttons{grid-template-columns:repeat(3,minmax(0,1fr));padding:3px 13px 16px}.cx-section-label{padding-left:13px;padding-right:13px}.cx-toolbar{padding:11px 13px}.cx-results{grid-template-columns:1fr;padding:4px 13px 22px}.cx-output-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.cx-legend{padding:11px 13px}.cx-disclaimer{padding:0 13px 20px}.cx-scroll{margin:0 8px}.cx-head-muted{display:none}.cx-section-sub{display:block;margin:4px 0 0}}
+@media(prefers-reduced-motion:reduce){.cx-class-buttons button{transition:none}}
 </style>
 </head>
 <body>
@@ -64,21 +76,20 @@ footer{padding:28px max(7vw,24px);background:#030916;border-top:1px solid #1e355
 <div class="steps"><div class="step"><div class="num">01</div><h3>Capture RF Signal</h3><p>Receive RF activity using the SDR front end.</p></div><div class="step"><div class="num">02</div><h3>DSP Processing</h3><p>Process and prepare raw I/Q signal data.</p></div><div class="step"><div class="num">03</div><h3>Feature Extraction</h3><p>Represent signal characteristics for model input.</p></div><div class="step"><div class="num">04</div><h3>CNN Classification</h3><p>Estimate the signal class using deep learning.</p></div><div class="step"><div class="num">05</div><h3>Monitoring</h3><p>Display classification output for analysis.</p></div></div></section>
 
 <section class="ai-lab" id="ai-inspector">
- <div class="eyebrow">04 / Inside the AI</div>
- <h2>How SIGMA's ResNet learns signal patterns.</h2>
- <p class="intro">Explore the architecture used by the 11-class modulation model. Move through the network from 1,024 complex I/Q samples to 11 modulation probabilities, including the residual shortcuts that help features flow through deeper layers.</p>
- <div class="ai-shell">
-  <div class="ai-top"><strong>RESNET V4 · INTERACTIVE ARCHITECTURE EXPLAINER</strong><span class="ai-flag">Schematic animation · not live inference</span></div>
-  <div class="ai-controls">
-   <button id="aiPrev" type="button" aria-label="Previous AI stage">◀ Prev</button>
-   <button id="aiPlay" class="primary" type="button">▶ Auto play</button>
-   <button id="aiNext" type="button" aria-label="Next AI stage">Next ▶</button>
-   <input id="aiStep" type="range" min="0" max="8" value="0" aria-label="AI architecture stage"/>
-   <span id="aiCount" style="color:#68e8eb;font-size:.86rem;white-space:nowrap">1 / 9</span>
-  </div>
-  <canvas id="aiCanvas" class="ai-canvas" width="1000" height="420" role="img" aria-label="Animated diagram of SIGMA 1D ResNet model layers"></canvas>
-  <div class="ai-detail"><div><h3 id="aiStageName">I/Q Input</h3><p id="aiStageDesc">Two real-valued channels represent the in-phase and quadrature samples.</p><div class="ai-shape" id="aiShape">[2 × 1024]</div></div><div><h3>11 modulation outputs</h3><div class="ai-class-grid" id="aiClassGrid"><span>OOK</span><span>BPSK</span><span>QPSK</span><span>8PSK</span><span>OQPSK</span><span>16QAM</span><span>64QAM</span><span>256QAM</span><span>GMSK</span><span>AM-DSB-WC</span><span>FM</span></div></div></div>
-  <p class="ai-note">Based on Sigma11LiteResNet1D from SIGMA's Developer page. Channel counts, strides, block order and skip connections reflect the supplied source code. Moving dots illustrate information flow, not actual trained weights, measured activations or prediction probabilities. The 11 outputs are combined into 9 displayed modulation groups elsewhere in SIGMA.</p>
+ <div class="eyebrow">04 / INSIDE THE AI</div>
+ <h2>Watch ResNet process an RF signal.</h2>
+ <p class="intro">Select one of 11 modulation classes. Follow a signal pulse through SIGMA's actual ResNet V4 block layout, including convolution layers, residual shortcuts and addition nodes.</p>
+ <div class="cx-shell">
+  <div class="cx-head"><div><span class="cx-live-dot"></span> SIGMA / RESNET V4 <span class="cx-head-muted">· ARCHITECTURE EXPLAINER</span></div><span class="cx-demo-pill">INTERACTIVE SIMULATION · NOT AI INFERENCE</span></div>
+  <div class="cx-section-label">01 / SELECT A DEMO SIGNAL</div>
+  <div class="cx-class-buttons" id="cxButtons" role="group" aria-label="Select an example modulation signal"></div>
+  <div class="cx-toolbar"><div class="cx-toolbar-left"><button type="button" id="cxReplay">↻ Replay</button><button type="button" id="cxPause">Ⅱ Pause</button><button type="button" id="cxPrev">← Previous block</button><button type="button" id="cxNext">Next block →</button></div><div class="cx-status" id="cxStatus" aria-live="polite">Select any modulation to begin</div></div>
+  <div class="cx-section-label">02 / RESNET V4 · FULL RESIDUAL PATH <span class="cx-section-sub">Swipe to follow the network →</span></div>
+  <div class="cx-scroll" id="cxScroll"><svg id="cxDiagram" viewBox="0 0 2550 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ResNet V4 1D architecture showing I/Q input, convolution stem, nine residual blocks with shortcuts and addition nodes, global average pooling and fully connected classification"></svg></div>
+  <div class="cx-legend"><span><i style="background:#30dcf2"></i>Main convolution path</span><span><i style="background:#f5bd50"></i>Residual skip path</span><span><i style="background:#50f5b2"></i>Active processing block</span></div>
+  <div class="cx-section-label">03 / OUTPUT CLASSIFICATION <span class="cx-section-sub">Illustrative selection, not predicted probabilities</span></div>
+  <div class="cx-results"><div id="cxOutput" class="cx-output-grid" aria-label="11 modulation output nodes"></div><div class="cx-decision"><div class="cx-decision-kicker">DEMO CLASSIFICATION RESULT</div><div id="cxWinner" class="cx-winner">—</div><div id="cxDecisionNote" class="cx-decision-note">Choose a signal above to start the architecture animation.</div><div class="cx-progress"><div id="cxProgress"></div></div></div></div>
+  <p class="cx-disclaimer"><strong>How to read this:</strong> 1,024 complex I/Q samples become 2 real-valued channels. The actual network uses Stem (2→32), R1 (32), R2 (64), R3 (128), R4 (256), R5 (256), global average pooling and a 256→128→11 classification head. Every residual block performs Conv1D → BN → ReLU → Conv1D → BN, adds an identity or 1×1 projection shortcut, then applies ReLU. Moving pulses and highlighted outputs are an educational illustration: no model checkpoint is loaded, and no confidence scores are fabricated.</p>
  </div>
 </section>
 <section class="hardware" id="hardware"><div class="eyebrow">05 / Main hardware components</div><h2>Key equipment used</h2><div class="grid"><article class="card"><span class="tag">SDR PLATFORM</span><h3>American Original HackRF One</h3><div class="spec">1 MHz – 6 GHz</div><p>Software-defined radio used for RF signal reception and I/Q data capture.</p></article><article class="card"><span class="tag">RF FRONT END</span><h3>Wideband RF Antenna</h3><div class="spec">700 MHz – 6 GHz</div><p>Omnidirectional antenna specified in the project flyer for wide frequency coverage.</p></article><article class="card"><span class="tag">PROCESSING</span><h3>Laptop</h3><p>Used for signal processing, analysis and AI classification workflows.</p></article></div></section>
@@ -94,54 +105,88 @@ footer{padding:28px max(7vw,24px);background:#030916;border-top:1px solid #1e355
 <section class="vision"><div class="eyebrow">08 / Our vision</div><blockquote>“Towards a smarter and safer radio frequency environment through intelligent signal classification.”</blockquote><div class="brand">PROJECT SIGMA <span>BY TUNEX</span></div></section>
 <footer><div>© 2026 Project SIGMA · TuneX</div><div>Strategic Electronic Defence Innovation Challenge · SEDIC 2026</div></footer>
 
+
 <script>
 (()=>{
- const canvas=document.getElementById('aiCanvas');if(!canvas)return;
- const c=canvas.getContext('2d');const slider=document.getElementById('aiStep');
- const stages=[
-  {name:'I/Q Input',shape:'[2 × 1024]',desc:'HackRF samples are represented as I and Q channels. Each input window contains 1,024 complex I/Q samples.',kind:'input',a:2,b:2},
-  {name:'Stem · Conv1D + BN + ReLU',shape:'[2 × 1024] → [32 × 1024]',desc:'A 7-tap, stride-1 convolution turns the two I/Q channels into 32 learned feature channels.',kind:'conv',a:2,b:32},
-  {name:'Residual Stage 1 · 2 blocks',shape:'[32 × 1024] → [32 × 1024]',desc:'Two residual blocks learn features using Conv1D(3) → BN → ReLU → Conv1D(3) → BN, with identity skip connections.',kind:'res',a:32,b:32,blocks:2},
-  {name:'Residual Stage 2 · 2 blocks',shape:'[32 × 1024] → [64 × 512]',desc:'The first block downsamples using stride 2 and projects the shortcut using 1×1 Conv1D. The second block keeps the shape.',kind:'res',a:32,b:64,blocks:2},
-  {name:'Residual Stage 3 · 2 blocks',shape:'[64 × 512] → [128 × 256]',desc:'Another stride-2 projection block expands features from 64 to 128 channels; the next block refines them.',kind:'res',a:64,b:128,blocks:2},
-  {name:'Residual Stage 4 · 2 blocks',shape:'[128 × 256] → [256 × 128]',desc:'Deeper residual processing expands to 256 channels while reducing the temporal dimension to 128.',kind:'res',a:128,b:256,blocks:2},
-  {name:'Residual Stage 5 · 1 block',shape:'[256 × 128] → [256 × 128]',desc:'The final residual block preserves 256 channels and 128 time positions using an identity shortcut.',kind:'res',a:256,b:256,blocks:1},
-  {name:'Global Average Pool + FC',shape:'[256 × 128] → [256] → [128]',desc:'Temporal features are averaged into a 256-element vector, then passed through a fully connected 128-unit layer.',kind:'pool',a:256,b:128},
-  {name:'11-class Output · Softmax',shape:'[128] → [11 probabilities]',desc:'A final linear layer produces 11 logits. Softmax converts them to class probabilities; QAM subclasses are merged only for the display.',kind:'output',a:128,b:11}
- ];
- let current=0, playing=false, tick=0, timer=null;
- const labels=document.getElementById('aiClassGrid').children;
- function renderInfo(){let s=stages[current];document.getElementById('aiStageName').textContent=s.name;document.getElementById('aiStageDesc').textContent=s.desc;document.getElementById('aiShape').textContent=s.shape;document.getElementById('aiCount').textContent=(current+1)+' / '+stages.length;slider.value=current;for(let el of labels){el.style.opacity=current===8?'1':'.5';el.style.borderColor=current===8?'#35bda8':'#284365';}}
- function setStep(n){current=Math.max(0,Math.min(stages.length-1,n));renderInfo();draw()}
- function stop(){playing=false;clearInterval(timer);timer=null;document.getElementById('aiPlay').textContent='▶ Auto play'}
- function rr(x,y,w,h,r,col){c.fillStyle=col;c.beginPath();c.roundRect(x,y,w,h,r);c.fill()}
- function line(x1,y1,x2,y2,color,width=1,dash=[]){c.strokeStyle=color;c.lineWidth=width;c.setLineDash(dash);c.beginPath();c.moveTo(x1,y1);c.lineTo(x2,y2);c.stroke();c.setLineDash([])}
- function dots(x,n,color,bright){const shown=Math.min(n,40),height=245,top=88;for(let j=0;j<shown;j++){const y=top+(j+.5)*height/shown;c.beginPath();c.arc(x,y,Math.max(2.0,Math.min(4.2,120/shown)),0,Math.PI*2);c.fillStyle=color;c.globalAlpha=bright?.85:.4;c.fill();}c.globalAlpha=1;}
- function text(t,x,y,size=15,color='#d7eafa',align='center'){c.font=`${size}px Arial`;c.textAlign=align;c.fillStyle=color;c.fillText(t,x,y)}
- function draw(){const w=1000,h=420;c.clearRect(0,0,w,h);const s=stages[current];
-  c.fillStyle='#091429';c.fillRect(0,0,w,h);for(let x=20;x<w;x+=40)line(x,10,x,400,'#132642');for(let y=20;y<h;y+=40)line(0,y,w,y,'#132642');
-  text('SIGNAL FLOW',30,37,14,'#6abac9','left');text(s.name.toUpperCase(),970,37,14,'#f2be56','right');
-  const xs=s.kind==='res'?[135,350,560,770,895]:[180,500,820];const names=s.kind==='res'?['INPUT','CONV 1','CONV 2','ADD (+)','OUTPUT']:s.kind==='input'?['I CHANNEL','I/Q PAIR','Q CHANNEL']:s.kind==='pool'?['256 CH','AVG POOL','FC 128']:s.kind==='output'?['FC 128','LOGITS','11 CLASSES']:['INPUT','CONV + BN','OUTPUT'];
-  const counts=s.kind==='res'?[s.a,s.b,s.b,s.b,s.b]:s.kind==='output'?[128,11,11]:s.kind==='input'?[1,2,1]:s.kind==='pool'?[Math.min(s.a,256),256,128]:[s.a,Math.min(32,s.b),s.b];
-  for(let i=0;i<xs.length;i++){text(names[i],xs[i],65,14,i===xs.length-1?'#65eed1':'#c7d8f0');dots(xs[i],counts[i],i===xs.length-1?'#55f2d2':'#65b7ed',i===xs.length-1);text(counts[i]+' ch',xs[i],363,13,'#819bbd')}
-  for(let i=0;i<xs.length-1;i++){
-   for(let j=0;j<12;j++){let ya=100+j*18,yb=100+((j*7+i*3)%12)*18;line(xs[i]+7,ya,xs[i+1]-7,yb,'rgba(59,181,222,.13)')}
-   line(xs[i]+6,208,xs[i+1]-6,208,'#42cbe2',2);
-   const x=xs[i]+6+(xs[i+1]-xs[i]-12)*tick;c.beginPath();c.arc(x,208,5,0,Math.PI*2);c.fillStyle='#5cf9e0';c.fill();
-  }
-  if(s.kind==='res'){
-   c.strokeStyle='#f3bb51';c.lineWidth=3;c.setLineDash([9,6]);c.beginPath();c.moveTo(xs[0],105);c.bezierCurveTo(145,10,755,10,xs[3],105);c.stroke();c.setLineDash([]);text(s.a===s.b?'IDENTITY SHORTCUT':'1×1 PROJECTION SHORTCUT',470,90,13,'#f4ca7d');
-   rr(370,380,260,26,7,'#163851');text(s.blocks+' residual block'+(s.blocks>1?'s':''),500,398,13,'#dcefff');
-  }
-  if(s.kind==='output')text('Class names listed below · probabilities are not simulated',500,391,14,'#e5c47e');
-  else if(s.kind!=='res')text('Illustrative signal propagation · architecture from source code',500,394,13,'#91aacb');
+ 'use strict';
+ const labels=['OOK','BPSK','QPSK','8PSK','OQPSK','16QAM','64QAM','256QAM','GMSK','AM-DSB-WC','FM'];
+ const layers=[['R1B1',32,32,1024,1024,false],['R1B2',32,32,1024,1024,false],['R2B1',32,64,1024,512,true],['R2B2',64,64,512,512,false],['R3B1',64,128,512,256,true],['R3B2',128,128,256,256,false],['R4B1',128,256,256,128,true],['R4B2',256,256,128,128,false],['R5B1',256,256,128,128,false]];
+ const NS='http://www.w3.org/2000/svg',svg=document.getElementById('cxDiagram'),scroll=document.getElementById('cxScroll');
+ const buttons=document.getElementById('cxButtons'),outputs=document.getElementById('cxOutput'),winner=document.getElementById('cxWinner'),status=document.getElementById('cxStatus'),progress=document.getElementById('cxProgress'),note=document.getElementById('cxDecisionNote');
+ let selected=-1, running=false, paused=false, block=0, fraction=0, lastTime=0,raf=0;
+ const nodes=[],paths=[];
+ function el(tag,attrs,parent=svg,txt){let n=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs||{}))n.setAttribute(k,v);if(txt!==undefined)n.textContent=txt;parent.appendChild(n);return n}
+ function text(x,y,t,size=12,color='#b4cfe0',anchor='middle',parent=svg){return el('text',{x,y,fill:color,'font-size':size,'font-weight':'700','text-anchor':anchor,'font-family':'Arial, sans-serif'},parent,t)}
+ function path(d,cls,parent=svg){return el('path',{d,class:cls},parent)}
+ function rounded(x,y,w,h,title,sub,style=''){
+   const g=el('g',{class:'cx-block '+style});el('rect',{class:'cx-block-bg',x,y,width:w,height:h,rx:12},g);
+   text(x+w/2,y+28,title,14,'#e6f7ff','middle',g);text(x+w/2,y+49,sub,10,'#8cb4c7','middle',g);
+   return g;
  }
- document.getElementById('aiPrev').onclick=()=>{stop();setStep(current-1)};
- document.getElementById('aiNext').onclick=()=>{stop();setStep(current+1)};
- slider.oninput=e=>{stop();setStep(Number(e.target.value))};
- document.getElementById('aiPlay').onclick=()=>{if(playing){stop();return}if(current===stages.length-1)setStep(0);playing=true;document.getElementById('aiPlay').textContent='Ⅱ Pause';timer=setInterval(()=>{if(current>=stages.length-1){stop();return}setStep(current+1)},1700)};
- if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){let last=0;function frame(t){if(t-last>45){tick=(tick+.012)%1;draw();last=t}requestAnimationFrame(frame)}requestAnimationFrame(frame)}
- renderInfo();draw();
+ // Architecture dimensions are faithful to Sigma11LiteResNet1D. Schematic spatial layout is not a weight diagram.
+ const inX=40, stemX=160,startX=310,step=212,blkW=181,blockY=120,blockH=190;
+ text(48,40,'SIGMA V4 / 1D RESIDUAL NETWORK',16,'#72e7ee','start');text(48,61,'Input shape [2 × 1024] · nine residual blocks · classification head 256 → 128 → 11',11,'#769bb8','start');
+ const input=rounded(inX,176,94,74,'I / Q','2 × 1024');const stem=rounded(stemX,176,119,74,'STEM','Conv7  32 ch');
+ const first=path('M134 213 H160','cx-path'),stemLine=path('M279 213 H310','cx-path');
+ const route=[{main:[first],skips:[],node:input},{main:[stemLine],skips:[],node:stem}];
+ for(let i=0;i<layers.length;i++){
+   const [name,inch,outch,from,to,projection]=layers[i],x=startX+i*step;
+   let g=el('g',{class:'cx-block',id:'cxBlock'+i});
+   el('rect',{class:'cx-block-bg',x,y:blockY,width:blkW,height:blockH,rx:15},g);
+   text(x+blkW/2,blockY+24,name+' · '+outch+' ch',14,'#e7f9ff','middle',g);
+   const layerTag=i===0?'LAYER 1':i===2?'LAYER 2':i===4?'LAYER 3':i===6?'LAYER 4':i===8?'LAYER 5':'';
+   if(layerTag)text(x+blkW/2,blockY-16,layerTag,12,'#61decc');
+   text(x+blkW/2,blockY+42,from+' → '+to+' samples',10,'#7daac3','middle',g);
+   const conv1=rounded(x+14,blockY+66,67,47,'CONV 1','k3'+(from!==to?' s2':''));
+   const conv2=rounded(x+99,blockY+66,67,47,'CONV 2','k3 s1');
+   const pA=path(`M${x+3} ${blockY+89} H${x+14}`,'cx-path');
+   const pB=path(`M${x+81} ${blockY+89} H${x+99}`,'cx-path');
+   const pC=path(`M${x+166} ${blockY+89} H${x+174} V${blockY+139} H${x+102}`,'cx-path');
+   const addX=x+88,addY=blockY+139;
+   el('circle',{cx:addX,cy:addY,r:16,fill:'#4d4029',stroke:'#f4c468','stroke-width':2},g);text(addX,addY+6,'+',22,'#ffe3a8','middle',g);
+   const skip=path(`M${x+3} ${blockY+89} V${blockY+169} H${x+53} Q${x+61} ${blockY+169} ${x+61} ${blockY+155} H${addX-16}`,'cx-skip');
+   text(x+37,blockY+186,projection?'SKIP 1×1 PROJ':'SKIP IDENTITY',9,'#edb75d','middle',g);
+   const pOut=path(`M${addX+16} ${addY} H${x+174}`,'cx-path');
+   const next= i<8?path(`M${x+blkW} 213 H${x+step}`,'cx-path'):null;
+   paths.push({main:[pA,pB,pC,pOut],skip,node:g,next,conv1,conv2,addX,addY,x});nodes.push(g);
+ }
+ const endX=startX+layers.length*step, poolX=2210,fcX=2325;
+ const endLine=path(`M${startX+8*step+blkW} 213 H${poolX}`,'cx-path');
+ const pool=rounded(poolX,176,103,74,'AVG POOL','256 × 1');const fc=rounded(fcX,176,97,74,'FC 128','→ 11');
+ const finalLine=path('M2313 213 H2325','cx-path');
+ path('M2422 213 H2480','cx-path');
+ rounded(2480,176,65,74,'11','classes');
+ text(2485,290,'Softmax',11,'#7dbbcc','middle');
+ // SVG pulse uses actual point interpolation along drawn lines, including visible shortcut branch.
+ const pulseMain=el('circle',{r:7,fill:'#53f6ff',class:'cx-pulse',style:'color:#53f6ff',visibility:'hidden'});
+ const pulseSkip=el('circle',{r:6,fill:'#ffc767',class:'cx-pulse',style:'color:#ffc767',visibility:'hidden'});
+ const pulsePre=el('circle',{r:7,fill:'#53f6ff',class:'cx-pulse',style:'color:#53f6ff',visibility:'hidden'});
+ const segments=[
+  {label:'I/Q INPUT → STEM',dur:750,parts:[first],target:input},
+  {label:'STEM → RESNET',dur:700,parts:[stemLine],target:stem},
+  ...paths.map((b,i)=>({label:layers[i][0]+' · CONV1 → CONV2 → ADD (+)',dur:1150,parts:b.main,skip:b.skip,target:b.node,blockIndex:i})),
+  {label:'GLOBAL AVERAGE POOLING',dur:750,parts:[endLine],target:pool},
+  {label:'FULLY CONNECTED / SOFTMAX',dur:780,parts:[finalLine],target:fc}
+ ];
+ function move(dot,p,t){let len=p.getTotalLength(),pos=p.getPointAtLength(Math.max(0,Math.min(1,t))*len);dot.setAttribute('cx',pos.x);dot.setAttribute('cy',pos.y);dot.setAttribute('visibility','visible')}
+ function follow(dot,parts,t){let total=parts.reduce((s,p)=>s+p.getTotalLength(),0),dist=t*total;for(let p of parts){let l=p.getTotalLength();if(dist<=l){move(dot,p,dist/l);return}dist-=l}move(dot,parts[parts.length-1],1)}
+ function revealOutputs(){outputs.querySelectorAll('.cx-output-item').forEach((n,i)=>n.classList.toggle('lit',i===selected));winner.textContent=labels[selected];note.textContent='Selected class illuminated as an example. No live prediction or confidence score.';status.textContent='SIMULATION COMPLETE · '+labels[selected];}
+ function clearOutput(){outputs.querySelectorAll('.cx-output-item').forEach(n=>n.classList.remove('lit'));winner.textContent='PROCESSING…';note.textContent='Tracing both convolution and residual shortcut paths.'}
+ function highlight(){nodes.forEach((n,i)=>{n.classList.toggle('active',block===i+2);n.classList.toggle('done',block>i+2)});}
+ function showBlock(){highlight();if(block<segments.length){let seg=segments[block];status.textContent=`${block+1} / ${segments.length} · ${seg.label}`;if(seg.blockIndex!==undefined){const x=paths[seg.blockIndex].x;const left=x-95;const right=x+260;const w=scroll.clientWidth;const cur=scroll.scrollLeft;if(left<cur||right>cur+w)scroll.scrollTo({left:Math.max(0,x-110),behavior:'smooth'})}else if(block>=11)scroll.scrollTo({left:Math.max(0,scroll.scrollWidth-scroll.clientWidth),behavior:'smooth'});} }
+ function draw(){pulseMain.setAttribute('visibility','hidden');pulseSkip.setAttribute('visibility','hidden');pulsePre.setAttribute('visibility','hidden');if(selected<0||block>=segments.length)return;const seg=segments[block];if(seg.blockIndex!==undefined){const b=paths[seg.blockIndex]; // First 65% of time: two convolutions; final 35%: addition and output.
+ let t=fraction;if(t<.68){follow(pulseMain,b.main.slice(0,3),t/.68)}else{follow(pulseMain,[b.main[3]],(t-.68)/.32)}follow(pulseSkip,[b.skip],Math.min(1,t/.68));}else follow(pulseMain,seg.parts,fraction);
+ progress.style.width=(((block+fraction)/segments.length)*100)+'%';}
+ function stopFrame(){if(raf)cancelAnimationFrame(raf);raf=0}
+ function animate(now){if(!running||paused)return;if(!lastTime)lastTime=now;const delta=Math.min(70,now-lastTime);lastTime=now;fraction+=delta/segments[block].dur;if(fraction>=1){fraction=0;block++;if(block>=segments.length){running=false;stopFrame();pulseMain.setAttribute('visibility','hidden');pulseSkip.setAttribute('visibility','hidden');progress.style.width='100%';revealOutputs();document.getElementById('cxPause').textContent='Ⅱ Pause';return}showBlock()}draw();raf=requestAnimationFrame(animate)}
+ function start(i){selected=i;buttons.querySelectorAll('button').forEach((b,j)=>b.classList.toggle('active',i===j));stopFrame();running=true;paused=false;block=0;fraction=0;lastTime=0;clearOutput();showBlock();draw();document.getElementById('cxPause').textContent='Ⅱ Pause';raf=requestAnimationFrame(animate)}
+ function stage(dir){if(selected<0){start(0);return}stopFrame();running=false;paused=true;block=Math.min(segments.length-1,Math.max(0,block+dir));fraction=0;clearOutput();showBlock();draw();document.getElementById('cxPause').textContent='▶ Resume'}
+ labels.forEach((label,i)=>{let b=document.createElement('button');b.type='button';b.textContent=label;b.setAttribute('aria-label','Animate '+label+' through ResNet');b.addEventListener('click',()=>start(i));buttons.appendChild(b);let item=document.createElement('div');item.className='cx-output-item';item.innerHTML='<span class="cx-orb" aria-hidden="true"></span><span></span>';item.lastChild.textContent=label;outputs.appendChild(item)});
+ document.getElementById('cxReplay').addEventListener('click',()=>start(selected<0?1:selected));
+ document.getElementById('cxPause').addEventListener('click',e=>{if(selected<0){start(1);return}if(!running){if(block>=segments.length)start(selected);else{running=true;paused=false;lastTime=0;raf=requestAnimationFrame(animate);e.currentTarget.textContent='Ⅱ Pause'}return}paused=!paused;stopFrame();e.currentTarget.textContent=paused?'▶ Resume':'Ⅱ Pause';if(!paused){lastTime=0;raf=requestAnimationFrame(animate)}});
+ document.getElementById('cxPrev').addEventListener('click',()=>stage(-1));document.getElementById('cxNext').addEventListener('click',()=>stage(1));
+ // The page defaults to the BPSK demo while allowing immediate one-click changes.
+ start(1);
 })();
 </script>
 </body></html>
